@@ -56,9 +56,17 @@ body {
     counter-reset: sidenote-counter;
 }
 
+/* Adds dark mode */
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #151515;
+        color: #ddd;
+    }
+} */
+
 h1 {
     font-weight: 400;
-    margin-top: 4rem;
+    margin-top: 0rem;
     margin-bottom: 1.5rem;
     font-size: 3.2rem;
     line-height: 1;
@@ -109,9 +117,9 @@ p.subtitle {
     color: red;
 }
 
-article {
+/* article {
     padding: 5rem 0rem;
-}
+} */
 
 section {
     padding-top: 1rem;
@@ -127,8 +135,8 @@ ul {
 }
 
 p {
-    margin-top: 1.4rem;
-    margin-bottom: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding-right: 0;
     vertical-align: baseline;
 }
@@ -175,7 +183,7 @@ blockquote footer {
 section > p,
 section > footer,
 section > table {
-    width: 55%;
+    width: 70%;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
@@ -247,6 +255,13 @@ a:link, .tufte-underline, .hover-tufte-underline:hover {
         background-position-y: 87%, 87%, 87%;
     }
 }
+
+/* Adds dark mode */
+/* @media (prefers-color-scheme: dark) {
+    a:link, .tufte-underline, .hover-tufte-underline:hover {
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
+    }
+} */
 
 a:link::selection,
 a:link::-moz-selection {
@@ -368,7 +383,8 @@ input.margin-toggle {
 }
 
 label.sidenote-number {
-    display: inline;
+    display: inline-block;
+    max-height: 2rem; /* should be less than or equal to paragraph line-height */
 }
 
 label.margin-toggle:not(.sidenote-number) {
@@ -390,7 +406,7 @@ label.margin-toggle:not(.sidenote-number) {
     height: 100%;
 }
 
-@media (max-width: 760px) {
+/* @media (max-width: 760px) {
     body {
         width: 84%;
         padding-left: 8%;
@@ -467,4 +483,4 @@ label.margin-toggle:not(.sidenote-number) {
     img {
         width: 100%;
     }
-}
+} */

@@ -30,6 +30,7 @@ td, th {
   font-size: 1.4rem;
   padding: 10px;
   text-align: left;
+  vertical-align: top;
 }
 
 /* Allow tables to be full width
@@ -99,3 +100,4 @@ pre:not(.sourceCode) {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+

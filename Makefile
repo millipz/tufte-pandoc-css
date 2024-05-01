@@ -1,6 +1,7 @@
 # What to compile by default?
 SOURCES := docs/index.md \
-	docs/tufte-md/index.md
+	docs/tufte-md/index.md \
+	docs/mjp.md
 TARGETS := $(patsubst %.md,%.html,$(SOURCES))
 
 STYLES := tufte-css/tufte.css \
